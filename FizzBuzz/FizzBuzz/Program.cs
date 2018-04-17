@@ -21,16 +21,7 @@ namespace FizzBuzz
                 {
                     Console.WriteLine("Fizz");
                 }
-
-                // Program needs ReadKey() or console will disappear before user can see the output
-                else if (i == 100)
-                {
-                    Console.WriteLine("Buzz");
-                    Console.WriteLine("Press any key to exit prgram.");
-                    Console.ReadKey();
-                }
-
-                // ReadyKey() must go before this condition since 100 is a multiple of 5 
+                
                 else if(i % 5 == 0)
                 {
                     Console.WriteLine("Buzz");
@@ -40,10 +31,11 @@ namespace FizzBuzz
                 {
                     Console.WriteLine(i);
                 }
-
-                
             }
             
+            // Program needs ReadKey() or console will disappear before user can see the output 
+            Console.WriteLine("Press any key to exit prgram.");
+            Console.ReadKey();
         }
     }
 }
